@@ -6,7 +6,7 @@
 <body>
 		{% for page in pages %}
 			<ul>
-				<li><h3><a href="{% url 'page-list' page.id %}">{{page.title}}</li></h3></a>
+				<li><h3><a href="{{ page.get_absolute_url }}">{{page.title}}</li></h3></a>
 
 			</ul>
 		{% endfor %}
